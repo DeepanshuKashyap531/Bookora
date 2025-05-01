@@ -1,0 +1,122 @@
+.landing-container {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+  
+   
+    .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+      height:72vh;
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, #1d1e6b, #290e5a);
+      color: white;
+  
+      h2 {
+        font-size: 2.5rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin: 1rem 0 2rem;
+      }
+  
+      button {
+        background: white;
+        color: #4b3297;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+  
+        &:hover {
+          background: #5c90f9;
+        }
+      }
+    }
+  
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 3rem 1rem;
+      background: #f9f9f9;
+  
+      .feature-box {
+        flex: 1 1 250px;
+        margin: 1rem;
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  
+        h3 {
+          color: #272876;
+        }
+      }
+    }
+  
+    .cta {
+      padding: 4rem 2rem;
+      background: #2e27b7;
+      color: white;
+  
+      h2 {
+        font-size: 2rem;
+      }
+  
+      button {
+        background: white;
+        color: #448db5;
+        border: none;
+        padding: 0.7rem 1.4rem;
+        border-radius: 30px;
+        font-weight: bold;
+        margin-top: 1rem;
+        cursor: pointer;
+  
+        &:hover {
+          background: #ffe6e0;
+        }
+      }
+    }
+  
+    footer {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  // Responsive
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0.5rem;
+      }
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .cta h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
